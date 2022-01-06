@@ -9,10 +9,11 @@
     font-weight: 600;
     font-size: 3rem;
     opacity: 0.8;
+   
     
   }
-  h2,
-  p {
+  h2,p {
+    height: -30%;
     color: #658ec6;
     font-weight: 500;
     opacity: 0.8;
@@ -20,6 +21,7 @@
   }
   
   h3 {
+    height: -60%;
     color: #426696;
     font-weight: 600;
     opacity: 0.8;
@@ -27,7 +29,7 @@
   
   main {
     font-family: "Poppins", sans-serif;
-    min-height: 100vh;
+    min-height: 200vh;
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     display: flex;
     align-items: center;
@@ -61,15 +63,18 @@
     position: absolute;
     border-radius: 50%;
   }
-  
+  /*Circulo topo*/
   .circle1 {
-    top: 5%;
-    right: 15%;
+    top: -10%;
+    right: 11%;
   }
+  /*Circulo baixo*/
   .circle2 {
-    bottom: 5%;
-    left: 10%;
+    bottom: -50%;
+    left: 7%;
   }
+
+  /*Pad direito com foto e links*/
   .dashboard {
     flex: 1;
     display: flex;
@@ -84,63 +89,64 @@
     );
     border-radius: 2rem;
   }
+
+  /*Espaco do Pad azul*/
   .link {
     display: flex;
-    margin: 2rem 0rem;
+    margin: 2rem 0rem; /*desce pad esquerdo branco,
+    desce pad direito branco*/
     padding: 1rem 5rem;
     align-items: center;
     
   }
+
+  /*Espaco entre linhas*/
   .link h2 {
-    padding: 0rem 2rem;
+    padding: 0rem 0.5rem;/*tamanho das palavras do pad branco direito*/
   }
   
   .text {
     flex: 2;
   }
   
+  /*Espaco entre linhas*/
   .pro {
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-    border-radius: 2rem;
+    border-radius: 2rem; /*arredondamento */
     color: white;
-    padding: 1rem;
+    padding: 0.1rem; /*tamanho do Pad azul direito */ 
     position: relative;
   }
   
+  /*Posicao foto telefone */
   .pro img {
     position: absolute;
-    top: +15%;
+    top: 15%; 
     right: 10%;
   }
+
+  /*Tamanho Pad azul esquerdo*/
   .pro h2 {
-    width: 40%;
-    color: white;
-    font-weight: 600;
-    
+    width: 40%; /*Tamanho das palavras*/
+    color: rgba(255, 255, 255, 0.897);
+    font-weight: 300;
+    right: 150%;
   }
   
-  /* text */
+  /*Posicao da frase About me*/
   .status {
-    margin-bottom: 3rem;
+    position: relative;
+    top: -295%; 
+    left: 0.8rem;
   }
   
-  .status input {
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.3)
-    );
-    border: none;
-    width: 50%;
-    padding: 0.5rem;
-    border-radius: 2rem;
-  }
   
   .text {
-    margin: 2rem;
+    height: 0.5rem;
+    margin: 2rem;/*largura do Pad branco direito*/
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    
   }
   
   .card {
@@ -151,10 +157,11 @@
       rgba(255, 255, 255, 0.5)
     );
     border-radius: 1rem;
-    margin: 2rem 0rem;
-    padding: 2rem;
+    margin: 2rem 0rem;/* aqui eh about me */
+    padding: 2rem ; /* Espaco entre palavras about me,
+     and my writing */
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
-    justify-content: space-between;
+    
   }
   
   
